@@ -1,0 +1,38 @@
+.sectionTitle {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-content: center;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.aboutSection li {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.aboutSection ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutSection {
+    margin-bottom: 40px;
+}
+
+.icon {
+    margin: auto 12px auto;
+}
+
+.book {
+    font-style: italic;
+    padding-right: 4px;
+}

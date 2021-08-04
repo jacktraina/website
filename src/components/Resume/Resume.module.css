@@ -1,0 +1,246 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.educationContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 1.6em;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.header {
+    margin: 40px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.subheadings {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.headerLink {
+    color: black;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.headerLink:hover {
+    color: #097fd3;
+}
+
+.sectionTitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.coursesContainer ul li{
+    text-align: center;
+    list-style: disc;
+    display: inline;
+    margin: 1em;
+    line-height: 2;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border-left: 1px solid lightgray;
+    padding-left: 8px;
+}
+
+.coursesContainer li:first-child {
+    border-left: none;
+}
+
+.coursesContainer span:hover {
+    color: #097fd3;
+}
+
+.coursesContainer {
+    text-align: center;
+	padding-left: 0;
+}
+
+.coursesContainer a {
+    text-decoration-color: lightgray;
+    text-decoration-style: dotted;
+}
+
+.num {
+    font-weight: 600;
+	padding-left: 12px;
+}
+
+.courseLink:hover {
+    color: #097fd3;
+}
+
+.courseLink {
+    color: black;
+}
+
+@media (max-width: 999px) {
+    .subheadings {
+        gap: 0;
+        justify-content: space-between;
+    }
+	.coursesContainer {
+		padding-left: 0;
+	}
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+
+.skillbarTitle {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbarTitle span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbarBar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skillBarPercent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+.catButtonActive {
+	color: #097fd3;
+	border: 1px solid #097fd3;
+	padding: 20px;
+	cursor: pointer;
+	background: white;
+	font-weight: 600;
+	border-radius: 12px;
+}
+
+.catButton {
+	border: none;
+	color: black;
+	padding: 20px;
+	cursor: pointer;
+	background: white;
+	font-weight: 600;
+}
+
+.catButton:hover {
+	color: #097fd3;
+	border: 1px solid #097fd3;
+	border-radius: 12px;
+}
+
+.skillButtonsContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 20px auto 40px auto;
+	gap: 8px
+}
+
+@media (max-width: 999px) {
+	.skillButtonsContainer {
+		display: flex;
+		flex-direction: row;
+		row-gap: 8px;
+		justify-content: space-evenly;
+	}
+	.catButton {
+		padding: 10px 5px;
+	}
+	.catButtonActive {
+		padding: 10px 5px;
+		border-radius: 8px;
+	}
+	.coursesContainer ul {
+		display: flex;
+		flex-direction: column;
+		padding-right: 20px;
+	}
+	.coursesContainer li {
+		margin: 0 !important;
+		padding: 0;
+		border: none !important;
+		text-align: left !important;
+		overflow: hidden;
+	}
+	.coursesContainer a {
+		white-space: nowrap;
+
+	}
+}

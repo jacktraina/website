@@ -1,0 +1,84 @@
+.bioContainer {
+    width: 25em;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 5px 8px -4px black;
+}
+
+@media (max-width: 999px ){
+    .bioContainer {
+        display: block;
+        width: auto;
+        background: none;
+    }
+    .topContainer {
+        text-align: center;
+    }
+    .aboutWrapper {
+        display: none;
+    }
+    .bioName {
+        color: white !important;
+    }
+    .bioEmail {
+        color: lightgray !important;
+    }
+}
+
+.profilePicture {
+    width: 150px;
+    height: 150px;
+    object-fit: contains;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    /* border: solid 3px #802F93; */
+    border: solid 3px #097fd3;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bioName {
+    font-size: 1.6em;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bioEmail {
+    color: gray;
+    font-style: italic;
+    text-decoration-style: dotted;
+    font-size: 0.8em;
+}
+
+.bioEmail:hover {
+    color:#097fd3;
+}
+
+
+.aboutWrapper {
+    border-top: 1px solid #097fd35e;
+    margin: 2em 0 0;
+    padding: 2em 0 0;
+}
+
+.aboutTitle {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 800;
+    color: black;
+    text-align: left;
+    margin: 0 0 1em 0;
+    letter-spacing: 2px;
+}
+
+.aboutDescription {
+    color: black;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+

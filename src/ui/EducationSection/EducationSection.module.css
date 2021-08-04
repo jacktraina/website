@@ -1,0 +1,32 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.school {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.75;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1em;
+    color: gray
+}
+
+.link {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: lightgray;
+    color: black;
+}
+
+.link:hover {
+    color: #097fd3;
+}
+
+.contentContainer {
+    padding-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+.aboutButton {
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    background-color: #097fd3;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px -4px black;
+    cursor: pointer;
+}
+
+.aboutButton:hover {
+    background-color: #05609f;
+}
+
+.buttonWrapper {
+    text-align: center;
+    margin: 30px 0 10px;
+}

@@ -1,0 +1,21 @@
+.modal {
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 16px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: black;
+}
+
+.closeButton:hover {
+    color: #097fd3;
+    cursor: pointer;
+}

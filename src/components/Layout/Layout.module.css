@@ -1,0 +1,19 @@
+.layoutWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 66px;
+    padding: 2em 2em 0 2em;
+    flex-grow: 1;
+}
+
+.main {
+    width: 100%;
+}
+
+@media (max-width: 999px) {
+    .layoutWrapper {
+        padding: 0.5em;
+        padding-top: 1em;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,70 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.75;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.bulletsContainer {
+    font-size: 1em;
+    margin: 20px 0 40px 0;
+}
+
+.bullet {
+    margin-bottom: 10px;
+}
+
+.link {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: lightgray;
+    color: black;
+}
+
+.link:hover {
+    color: #097fd3;
+}
+
+.imageContainer {
+    margin: 20px 40px 0 0;
+}
+
+.topLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contentContainer {
+    margin: 30px 40px 40px 20px;
+    padding-left: 40px
+}
+
+@media (max-width: 999px) {
+    .imageContainer {
+        display: none;
+    }
+    .contentContainer {
+        padding: 0 0 0 8px;
+        margin: 20px 0;
+    }
+    .bulletsContainer {
+        font-size: 0.8em;
+    }
+    .topLine {
+        flex-direction: column;
+    }
+    .topRight {
+        font-size: 0.8em;
+    }
+}
