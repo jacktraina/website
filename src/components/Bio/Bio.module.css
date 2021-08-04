@@ -12,6 +12,7 @@
         display: block;
         width: auto;
         background: none;
+        box-shadow: none;
     }
     .topContainer {
         text-align: center;
