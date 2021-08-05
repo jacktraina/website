@@ -27,7 +27,7 @@ export const contactData = [
         color: "white",
     },
     {
-        link: 'https://facebook.com/jacktraina',
+        link: 'https://www.facebook.com/jacktraina',
         label: 'Facebook',
         icon: faFacebookF,
         description: "to send me happy birthday wishes",

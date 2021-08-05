@@ -8,6 +8,8 @@
     flex-basis: '100%';
     z-index: 99;
     box-shadow: 0 5px 8px -4px black;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 }
 .navbarItem {
     width: 100%;
@@ -28,6 +30,8 @@
     /* color: #802F93; */
     color: #097fd3;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
 }
 .navbarTitle:hover {
     color: black
