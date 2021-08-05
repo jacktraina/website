@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Resume.module.css';
 
-import experienceData, { ExperienceData } from '../../data/resume/experience'
+import experienceData from '../../data/resume/experience'
 import ExperienceSection from '../../ui/ExperienceSection/ExperienceSection';
 
 export default function Experience() {

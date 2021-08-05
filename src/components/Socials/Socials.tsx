@@ -16,7 +16,7 @@ interface Props {
 export const SocialRow = ({ description, icon, color, background, link } : Props) => {
     return (
         <div className={classes.socialRow}>
-            <a className={classes.iconWrapper} style={{backgroundColor: background}} href={link} target="_blank"><FontAwesomeIcon icon={icon} size="2x" color={color ?? "white"} className={classes.icon} /></a>
+            <a className={classes.iconWrapper} style={{backgroundColor: background}} href={link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={icon} size="2x" color={color ?? "white"} className={classes.icon} /></a>
             <div className={classes.description}>{description}</div>
         </div>
     )

@@ -3,9 +3,8 @@ import React, { Component, Suspense, lazy } from 'react'
 import ReactResizeDetector from 'react-resize-detector';
 import { DeviceSizeContext } from './Contexts'
 import { StyleSheet, css } from 'aphrodite'
-import { Router, Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Layout from './components/Layout/Layout'
-import { createBrowserHistory } from 'history';
 
 interface State {
     width?: number,
@@ -17,8 +16,6 @@ const About = lazy(() => import('./pages/About'))
 const Resume = lazy(() => import('./pages/Resume'))
 const Projects = lazy(() => import('./pages/Projects'))
 const Contact = lazy(() => import('./pages/Contact'))
-
-const history = createBrowserHistory();
 
 export default class AppBase extends Component<{ }, State> {
     constructor(props: { }) {

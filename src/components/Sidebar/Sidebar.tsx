@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import classes from './Sidebar.module.css';
 import cx from 'classnames';
 
@@ -14,18 +14,8 @@ interface SidebarProps {
     handleSidebar: () => void,
 }
 
-interface SidebarItemProps {
-    children: React.ReactChild
-}
-
 interface CloseIconProps {
     onClick: () => void,
-}
-
-export const SidebarItem = ({ children } : SidebarItemProps) => {
-    return (
-        <a>{children}</a>
-    )
 }
 
 const CloseIcon = ({ onClick } : CloseIconProps) => {

@@ -38,11 +38,11 @@ const SubSection = ({ subtitle, topRight, bullets} : SubSectionProps) => (
 
 export default function ExperienceSection( props : ExperienceSectionProps) {
     if(!props) return <></>
-    const { title, subtitles, topRight, bullets, descriptions, link, imageURL, color } = props;
+    const { title, subtitles, topRight, bullets, link, imageURL, color } = props;
     return (
         <div className={classes.sectionContainer}>
             <div className={classes.imageContainer}>
-                <img width="100" height="100" style={{objectFit: "contain"}} src={imageURL} className={classes.expImage}/>
+                <img width="100" height="100" style={{objectFit: "contain"}} alt={title} src={imageURL} className={classes.expImage}/>
             </div>
             <div className={classes.contentContainer} style={{borderLeft: 'solid', borderColor: color}}>
                 {title && <div className={classes.title}><a className={classes.link} href={link}>{title}</a></div>}

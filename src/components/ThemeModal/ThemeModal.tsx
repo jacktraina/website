@@ -17,7 +17,7 @@ export default function ThemeModal({ onClose, show } : Props) {
         <Modal onClose={onClose} show={show}>
             <div className={classes.themeWrapper}>
                 <ul>
-                {themeData.map(theme => <li><ThemeBanner name={theme.name} background={theme.bg} color={theme.color} hoverBackground={theme.hoverBg}/></li>)}
+                {themeData.map(theme => <li><ThemeBanner key={theme.name} name={theme.name} background={theme.bg} color={theme.color} hoverBackground={theme.hoverBg}/></li>)}
                 </ul>
             </div>
         </Modal>
@@ -36,7 +36,7 @@ const ThemeBanner = ({ name, background, color, hoverBackground } : BannerProps)
     return (
         <div className={classes.headerContainer}>
             <div className={classes.headerTitle} style={{color: color ?? 'black'}}>{name}</div>
-            <img className={classes.headerImg} src={currentImg} onMouseEnter={() => setCurrentImg(hoverBackground)} onMouseOut={() => setCurrentImg(background)}/>
+            <img className={classes.headerImg} src={currentImg} alt={name} onMouseEnter={() => setCurrentImg(hoverBackground)} onMouseOut={() => setCurrentImg(background)}/>
         </div>
     )
 }

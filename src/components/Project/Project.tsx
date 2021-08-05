@@ -2,7 +2,6 @@ import React from 'react'
 
 import classes from './Project.module.css'
 import { getMonthYear } from '../../utils'
-import classNames from 'classnames'
 
 interface Props {
     title: string,
@@ -20,7 +19,7 @@ export default function Project({ title, date, img, description, link } : Props)
                 <div className={classes.date}>{date && getMonthYear(date)}</div>
             </header>
             <div className={classes.imageContainer}>
-                <a href={link} target="_blank"><img src={img} className={classes.projectImage}/></a>
+                <a href={link} target="_blank" rel="noreferrer"><img src={img} className={classes.projectImage} alt={title}/></a>
             </div>
             <div className={classes.projectDescription}>{description}</div>
         </div>

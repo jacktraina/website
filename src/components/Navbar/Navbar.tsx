@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react';
-import { StyleSheet, css } from 'aphrodite'
+import React, { useContext } from 'react';
 import classnames from 'classnames'
 
 import classes from './Navbar.module.css'

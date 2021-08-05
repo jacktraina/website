@@ -5,7 +5,6 @@ import Container from '../ui/Container/Container';
 import Card from '../ui/Card/Card';
 import classes from './Pages.module.css';
 import { Link } from 'react-router-dom';
-import { Button } from '../ui/Button/Button';
 import ThemeModal from '../components/ThemeModal/ThemeModal';
 
 const Home = () => {

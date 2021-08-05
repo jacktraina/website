@@ -11,7 +11,7 @@ import { Location } from 'history';
 const TopSection = () => {
     return (
         <div className={classes.topContainer}>
-            <img src={jack} className={classes.profilePicture}/>
+            <img src={jack} className={classes.profilePicture} alt={"Jack Traina"}/>
             <div className={classes.bioName}>Jack Traina</div>
             <a href="mailto:jacktraina@college.harvard.edu" className={classes.bioEmail}>jacktraina@college.harvard.edu</a>
         </div>

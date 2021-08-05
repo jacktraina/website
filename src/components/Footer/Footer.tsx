@@ -11,7 +11,7 @@ export default function Footer() {
                 <ul className={classes.socialContainer}>
                     {contactData.map(c => (
                         <li key={c.label} className={classes.icon}>
-                            <a href={c.link} className={classes.icon} target="_blank">
+                            <a href={c.link} className={classes.icon} target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={c.icon} size="lg" className={classes.icon}/>
                             </a>
                         </li>
