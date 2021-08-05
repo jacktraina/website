@@ -1,6 +1,6 @@
 import { faBooks, faTvRetro, faWhale, faVolleyballBall, faBasketballHoop} from '@fortawesome/pro-regular-svg-icons'
 
-export const aboutIntro = "Hello! I'm Jack. I'm a student at Harvard studying Computer Science with a secondary in Mind, Brain, and Behavior. I'm passionate about technology and understanding how new innovations can create positive social change. In my free time, I love to workout, binge movies, and explore new places. Check out some of my interests below!"
+export const aboutIntro = "Hello! I'm Jack. I'm a student at Harvard studying Computer Science with a secondary in Mind, Brain, and Behavior. I'm passionate about technology and understanding how new innovations can create positive social change. In my free time I love to workout, binge movies, and explore new places. Check out some of my interests below!"
 
 const aboutData = [
     {

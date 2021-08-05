@@ -100,7 +100,7 @@
 @media (max-width: 999px) {
     .subheadings {
         gap: 0;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 	.coursesContainer {
 		padding-left: 0;

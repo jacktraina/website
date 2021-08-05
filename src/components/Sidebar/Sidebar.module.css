@@ -9,6 +9,8 @@
     overflow-x: hidden;
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 @media screen and (max-width: 600px) {
