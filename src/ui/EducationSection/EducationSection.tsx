@@ -22,7 +22,7 @@ export default function EducationSection( props : EducationSectionProps) {
                 {school && <div className={classes.school}><a className={classes.link} href={link}>{school}</a></div>}
                 {mobileSizeClass && year &&
                     <div className={classes.subtitle}>
-                        {multiline?.map(line => <div>{line}</div>)}
+                        {multiline?.map((line, i) => <div key={i}>{line}</div>)}
                         {getMonthYear(year)}
                     </div>}
                 {!mobileSizeClass && description && year && <div className={classes.subtitle}>{description}, {getMonthYear(year)}</div>}

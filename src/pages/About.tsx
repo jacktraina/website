@@ -15,7 +15,7 @@ const About = () => {
                 <Card title="About Me" subtitle={<div className={classes.subtitle}>A litte about who i am.</div>}>
                     <div className={classes.title}>Intro</div>
                     <div className={classes.intro}>{aboutIntro}</div>
-                    {aboutData.map(section => <AboutSection icon={section.icon} title={section.title} bullets={section.bullets}/>)}
+                    {aboutData.map((section, i) => <AboutSection key={i} icon={section.icon} title={section.title} bullets={section.bullets}/>)}
                 </Card>
             </Container>
         </Layout>

@@ -16,7 +16,7 @@ export default function AboutSection({ icon, title, bullets } : Props) {
                 <div className={classes.title}>{title}</div>
             </div>
             <ul>
-                {bullets.map(bullet => <li><FontAwesomeIcon icon={bullet.icon ?? icon} size="xs" color="#097fd3" className={classes.icon}/><span className={classes.book}>{bullet.title}{bullet.author && ','}</span>{bullet.author}</li>)}
+                {bullets.map((bullet, i) => <li key={i}><FontAwesomeIcon key={i} icon={bullet.icon ?? icon} size="xs" color="#097fd3" className={classes.icon}/><span key={i} className={classes.book}>{bullet.title}{bullet.author && ','}</span>{bullet.author}</li>)}
             </ul>
         </div>
     )

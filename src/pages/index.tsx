@@ -1,0 +1,5 @@
+export * as Home from './Home'
+export * as About from './About'
+export * as Contact from './Contact'
+export * as Projects from './Projects'
+export * as Resume from './Resume'

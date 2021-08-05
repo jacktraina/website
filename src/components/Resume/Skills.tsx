@@ -10,13 +10,13 @@ export default function Skills() {
             <div className={classes.sectionTitle}>Skills</div>
             <div className={classes.skillButtonsContainer}>
                 {categories.map(cat => (
-                    <SkillButton label={cat.name} handleClick={() => activeCategory === cat.name ? setActiveCategory("") : setActiveCategory(cat.name)} active={cat.name === activeCategory}/>
+                    <SkillButton key={cat.name} label={cat.name} handleClick={() => activeCategory === cat.name ? setActiveCategory("") : setActiveCategory(cat.name)} active={cat.name === activeCategory}/>
                 ))}
             </div>
             {skillsData
                 .filter(s => !activeCategory || s.category.includes(activeCategory))
                 .sort((a, b) => b.competency - a.competency) 
-                .map((skill) => <SkillBar data={skill} categories={categories}/>)
+                .map((skill) => <SkillBar key={skill.title} data={skill} categories={categories}/>)
             }
         </div>
     )

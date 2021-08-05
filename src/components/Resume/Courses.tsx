@@ -11,7 +11,7 @@ export default function Courses() {
                 {courseData
                     .sort((a, b) => a.courseNumber > b.courseNumber ? 1 : -1)
                     .map(course => 
-                        <li>
+                        <li key={course.title}>
                             <a href={course.link ?? harvardLink} target="_blank" rel="noreferrer" className={classes.courseLink}>
                                 <span className={classes.num}>{course.courseNumber}</span>: <span id="hi"className={classes.course}>{course.title}</span>
                             </a>

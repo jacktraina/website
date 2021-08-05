@@ -15,7 +15,7 @@ interface ExperienceSectionProps {
 const formatBullets = ( bulletPoints : string[]) => {
     return (
         <ul className={classes.bulletsContainer}>
-            {bulletPoints.map(bullet => <li className={classes.bullet}>{bullet}</li>)}
+            {bulletPoints.map((bullet, i) => <li key={i} className={classes.bullet}>{bullet}</li>)}
         </ul>
     )
 }
@@ -46,7 +46,7 @@ export default function ExperienceSection( props : ExperienceSectionProps) {
             </div>
             <div className={classes.contentContainer} style={{borderLeft: 'solid', borderColor: color}}>
                 {title && <div className={classes.title}><a className={classes.link} href={link}>{title}</a></div>}
-                {subtitles?.map((sub, i) => <SubSection subtitle={sub} topRight={(topRight && topRight[i]) ?? ''} bullets={(bullets && bullets[i]) ?? ['']}/>)}
+                {subtitles?.map((sub, i) => <SubSection key={i} subtitle={sub} topRight={(topRight && topRight[i]) ?? ''} bullets={(bullets && bullets[i]) ?? ['']}/>)}
             </div>
         </div>
     )

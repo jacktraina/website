@@ -1,21 +1,20 @@
-import React, { Component, Suspense, lazy } from 'react'
+import React, { Component, Suspense } from 'react'
 
 import ReactResizeDetector from 'react-resize-detector';
 import { DeviceSizeContext } from './Contexts'
 import { StyleSheet, css } from 'aphrodite'
 import { Route, Switch, Redirect } from "react-router-dom";
 import Layout from './components/Layout/Layout'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Resume from './pages/Resume'
+import Projects from './pages/Projects'
 
 interface State {
     width?: number,
     height?: number,
 }
-
-const Home = lazy(() => import('./pages/Home'))
-const About = lazy(() => import('./pages/About'))
-const Resume = lazy(() => import('./pages/Resume'))
-const Projects = lazy(() => import('./pages/Projects'))
-const Contact = lazy(() => import('./pages/Contact'))
 
 export default class AppBase extends Component<{ }, State> {
     constructor(props: { }) {
@@ -35,11 +34,11 @@ export default class AppBase extends Component<{ }, State> {
                 </div>
                 <Suspense fallback={<Layout selectedTab={-1}/>}>
                     <Switch>
-                        <Route path="/home" component={Home} />
-                        <Route path="/about" component={About} />
-                        <Route path="/resume" component={Resume} />
-                        <Route path="/projects" component={Projects} />
-                        <Route path="/contact" component={Contact} />
+                        <Route path="/home" render={() => <Home />} />
+                        <Route path="/about" render={() => <About />} />
+                        <Route path="/resume" render={() => <Resume />}/>
+                        <Route path="/projects" render={() => <Projects />} />
+                        <Route path="/contact" render={() => <Contact/>} />
                         <Redirect from="/" to="/home" />
                     </Switch>
                 </Suspense>

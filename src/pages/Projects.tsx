@@ -15,7 +15,7 @@ const Projects = () => {
                     <div className={classes.projectsContainer}>
                         <ul>
                             {projectsData.map(proj => (
-                                <li><Project title={proj.title} date={proj.date} img={proj.image} description={proj.description} link={proj.link}/></li>
+                                <li key={proj.title}><Project title={proj.title} date={proj.date} img={proj.image} description={proj.description} link={proj.link}/></li>
                             ))}
                         </ul>
                     </div>

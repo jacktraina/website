@@ -9,7 +9,7 @@ export default function Experience() {
         <div className={classes.experienceContainer} id="education">
             <div className={classes.sectionTitle}>Experience</div>
             {experienceData.map(exp => (
-                <ExperienceSection title={exp.company} subtitles={exp.positions} topRight={exp.dateRanges} bullets={exp.bullets} link={exp.link} imageURL={exp.imageURL} color={exp.color}/>
+                <ExperienceSection key={exp.company} title={exp.company} subtitles={exp.positions} topRight={exp.dateRanges} bullets={exp.bullets} link={exp.link} imageURL={exp.imageURL} color={exp.color}/>
             ))}
         </div>
     )
